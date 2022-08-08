@@ -194,6 +194,13 @@ workflows:
       flutter: 2.8.1
       xcode: latest
       cocoapods: default
+   triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'master'
+          include: true
+          source: true
     scripts:
       - name: Set up key properties
         script: |
